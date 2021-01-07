@@ -13,6 +13,7 @@ class PostViewController: UIViewController {
     
     
     @IBOutlet weak var post: UILabel!
+    @IBOutlet weak var info: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()

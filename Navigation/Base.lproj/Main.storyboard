@@ -77,16 +77,17 @@
                         <viewLayoutGuide key="safeArea" id="v6s-yV-lz5"/>
                         <color key="backgroundColor" red="0.63921568630000003" green="0.96862745100000003" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" width="468.5" id="aju-t5-iPG">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Post" id="yqV-D1-z0k">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="rtA-LQ-Y8N">
                             <connections>
-                                <segue destination="pU7-zU-fwz" kind="presentation" id="Jqv-Hy-PHn"/>
+                                <segue destination="pU7-zU-fwz" kind="presentation" id="6lm-Ug-SNf"/>
                             </connections>
                         </barButtonItem>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" title="Post" id="yqV-D1-z0k"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="info" destination="rtA-LQ-Y8N" id="wfa-g4-mwC"/>
                         <outlet property="post" destination="wcn-VA-mJj" id="7hp-8e-hfk"/>
                     </connections>
                 </viewController>
@@ -102,41 +103,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZZ-xG-1mk">
-                                <rect key="frame" x="166" y="143" width="86" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asC-QH-khy">
+                                <rect key="frame" x="179" y="406" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.63921568630000003" green="0.96862745100000003" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Settings"/>
                                 <connections>
-                                    <segue destination="NBt-7w-wXn" kind="show" id="pzS-F5-oYk"/>
+                                    <action selector="agree:" destination="15c-Nh-zno" eventType="touchUpInside" id="1Aq-8J-Ige"/>
+                                    <action selector="show:" destination="15c-Nh-zno" eventType="touchUpInside" id="QiR-LD-0e5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="83U-V6-HhP"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="asC-QH-khy" id="CNa-9I-EH5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7a-IK-VTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="15c-Nh-zno" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1216" y="1628"/>
-        </scene>
-        <!--Alert View Controller-->
-        <scene sceneID="0VT-lA-K3G">
-            <objects>
-                <viewController id="NBt-7w-wXn" customClass="UIAlertViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JfM-Kc-4QI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="AAz-kb-cwb"/>
-                        <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZlZ-9a-9F0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wq9-N3-ZQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1918.840579710145" y="1627.9017857142856"/>
         </scene>
         <!--Friends-->
         <scene sceneID="6I1-sn-pDH">
