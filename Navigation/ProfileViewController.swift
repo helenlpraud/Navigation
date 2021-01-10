@@ -8,22 +8,13 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var FIO: UIButton!
+    @IBOutlet weak var friends: UIButton!
+    @IBOutlet weak var followers: UIButton!
+    @IBOutlet weak var favorites: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
